@@ -17,7 +17,7 @@ header{
     background: rgba(255, 144, 14, 0.10);
     width: 100vw;
 }
-nav, .banner{
+nav, .banner, main{
     width: 80%;
     margin: 0 auto;
 }
@@ -61,14 +61,14 @@ header .banner{
     font-weight: bold;
     text-align: center;
 }
-.banner div p{
+.banner div p, .features .features-list p{
     margin-top: 24px;
     line-height: 26px;
     font-size: 16px;
     text-align: center;
     color: var(--dark03);
 }
-.banner div button{
+.banner div button, .features button{
     margin: 32px auto 50px auto;
     color: white;
     font-size: 20px;
@@ -83,8 +83,39 @@ header .banner{
     margin-bottom: 45px;
 }
 
+
+.features{
+    padding: 0 60px;
+    margin-top: 80px;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+.features .team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.features .features-list h2{
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--dark03);
+}
+.features-list h2 span{
+    font-weight: bold;
+}
+.of-our{
+    color: var(--dark01);
+}
+.features-text{
+    color:var(--button-bg);
+}
+.features .features-list p{
+    text-align: left;
+}
+
 @media screen and (max-width: 576px) {
-    nav, .banner{
+    nav, .banner, main{
         width: 95%;
         flex-direction: column;
     }
@@ -107,9 +138,21 @@ header .banner{
     .banner div h1{
         font-size: 2.5rem;
     }
-    .banner div button{
+    .banner div button, .features button{
         padding: 12px 22px;
         font-size: 16px;
         margin-bottom: 38px;
+    }
+
+    .features{
+        flex-direction: column;
+        margin-top: 60px;
+        padding: 0 32px;
+    }
+    .features .team-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features .features-list h2{
+        font-size: 36px;
     }
 }
