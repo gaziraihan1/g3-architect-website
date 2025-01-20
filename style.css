@@ -1,0 +1,115 @@
+:root{
+    --dark01: #131313;
+    --dark02: #424242;
+    --dark03: #727272;
+    --dark04: #A1A1A1;
+    --button-bg: #FF900E
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+header{
+    background: rgba(255, 144, 14, 0.10);
+    width: 100vw;
+}
+nav, .banner{
+    width: 80%;
+    margin: 0 auto;
+}
+nav{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 50px;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--dark02);
+}
+header nav h1{
+    font-size: 45px;
+}
+header .banner{
+    margin-top: 102px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner div{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner div h1{
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+}
+.banner div p{
+    margin-top: 24px;
+    line-height: 26px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--dark03);
+}
+.banner div button{
+    margin: 32px auto 50px auto;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--button-bg);
+    border: none;
+    border-radius: 8px;
+    padding: 18px 28px;
+}
+.banner img{
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+@media screen and (max-width: 576px) {
+    nav, .banner{
+        width: 95%;
+        flex-direction: column;
+    }
+    nav{
+        padding-top: 20px;
+        gap: 32px;
+    }
+    header nav ul{
+        gap: 26px;
+    }
+    header nav ul li a{
+        font-size: 16px;
+    }
+    header .banner{
+        margin-top: 60px;
+    }
+    .banner div{
+        width: 95%;
+    }
+    .banner div h1{
+        font-size: 2.5rem;
+    }
+    .banner div button{
+        padding: 12px 22px;
+        font-size: 16px;
+        margin-bottom: 38px;
+    }
+}
