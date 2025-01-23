@@ -194,9 +194,10 @@ button{
 }
 .facts > div{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .facts > div div{
+    width: 160px;
     margin-top: 100px;
     padding: 46px 36px;
     border: 1px solid rgb(255, 144, 14);
