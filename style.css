@@ -132,7 +132,7 @@ button{
     padding-top: 39px;
     padding-right: 52px;
 }
-.features-content > p{
+.features-content article p{
     margin-top: 32px;
     margin-bottom: 30px;
     font-size: 1em;
@@ -184,6 +184,38 @@ button{
     font-weight: 600;
 }
 
+.facts{
+    margin-top: 120px;
+}
+.facts h1{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+}
+.facts > div{
+    display: flex;
+    justify-content: space-around;
+}
+.facts > div div{
+    margin-top: 100px;
+    padding: 46px 36px;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    text-align: center;
+}
+.facts h4{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 53px;
+    padding-top: 10px;
+}
+.facts h6{
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    color: rgb(114, 114, 114);
+}
 @media screen and (max-width: 576px) {
     nav, .banner, main{
         width: 100%;
@@ -240,6 +272,7 @@ button{
     }
     .features-details .features-content{
         padding-right: 0px;
+        padding-top: 10px;
     } 
     .features-content div{
         padding: 26px;
@@ -255,8 +288,14 @@ button{
         line-height: 21px;
         padding-bottom: 10px;
     }
+    .features-details h1{
+        padding-left: 10px;
+    }
+    .features-content article h1{
+        font-size: 28px;
+    }
     .architect{
-        margin-top: 32px;
+        margin-top: 0px;
     }
     .architect div{
         padding: 24px 24px;
@@ -270,8 +309,39 @@ button{
         font-size: 18px;
         font-weight: 600;
     }
-
-   
+    .facts{
+        width: 90%;
+        margin: 60px auto 0 auto;
+    }
+    .facts h1{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 53px;
+    }
+    .facts > div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6em;
+    }
+    .facts p{
+        margin-bottom: 30px;
+        margin-top: 18px;
+    }
+    .facts > div div{
+        margin-top: 0px;
+        padding: 28px 10px;
+        border: 1px solid rgb(255, 144, 14);
+        border-radius: 8px;
+        text-align: center;
+    }
+    .facts h4{
+        font-size: 2.2em;
+        padding-top: 6px;
+    }
+    .facts h6{
+        font-size: 1.1em;
+        padding-top: 4px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -288,7 +358,7 @@ button{
     }
     .features{
         flex-direction: column;
-        padding: 0 40px
+        padding: 0 30px
     }
     header nav ul li a{
         font-size: 1rem;
@@ -318,7 +388,7 @@ button{
     
     .features-details {
         flex-direction: column;
-        width: 80%;
+        width: 90%;
         gap: 32px;
         margin: 0 auto;
     }
@@ -342,12 +412,23 @@ button{
         padding-bottom: 10px;
     }
     .features-details .features-content{
+        width: 100%;
         padding-right: 0px;
-    } 
+        gap: 16px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features-content article{
+        grid-column: 1/3;
+    }
+    .features-details .features-content h1{
+        display: flex;
+        align-items: center;
+    }
     .architect{
         margin-top: 32px;
         width: 90%;
-        margin-right:0 ;
+        margin-right:auto ;
         margin-left: auto;
     }
     .architect img{
@@ -366,6 +447,43 @@ button{
         font-weight: 600;
     }
 
-    
+    .facts{
+        width: 90%;
+        margin: 80px auto 0 auto;
+    }
+    .facts img{
+        width: auto;
+    }
+    .facts h1{
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 53px;
+    }
+    .facts > div{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    .facts p{
+        margin-bottom: 30px;
+        margin-top: 18px;
+    }
+    .facts > div div{
+        margin-top: 0px;
+        padding: 28px 30px;
+        border: 1px solid rgb(255, 144, 14);
+        border-radius: 8px;
+        text-align: center;
+        width: 160px;
+    }
+    .facts h4{
+        font-size: 2.2em;
+        padding-top: 6px;
+    }
+    .facts h6{
+        font-size: 1.1em;
+        padding-top: 4px;
+    }
 
 }
