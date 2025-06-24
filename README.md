@@ -30,3 +30,7 @@
 
 ## 📁 Project Structure
 
+g3-architect-website/
+├── index.html          # Main HTML file
+├── style.css           # CSS file for layout and styling
+├── images/            # Folder containing logos, icons, and screenshots
