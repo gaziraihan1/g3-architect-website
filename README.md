@@ -36,3 +36,19 @@ g3-architect-website/
 ├── style.css           # CSS file for layout and styling
 ├── images/            # Folder containing logos, icons, and screenshots
 ```
+
+## 📦 How to Use / Copy the Project
+
+You can clone this project to your local machine using Git:
+
+### 🔁 Clone the Repository
+
+```bash
+git clone https://github.com/gaziraihan1/g3-architect-website.git
+```
+
+### Change directory
+
+```bash
+cd g3-architect-website
+```
