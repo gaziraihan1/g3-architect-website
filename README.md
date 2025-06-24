@@ -15,8 +15,7 @@
 ---
 
 ## 🖼️ Screenshot
-
-> _(Add a screenshot here if you'd like – drop in your `images/` folder and update this line with `![Screenshot](images/screenshot.png)`.)_
+![Screenshot](images/g2-web-ss.png)
 
 ---
 
