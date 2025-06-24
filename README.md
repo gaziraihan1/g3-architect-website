@@ -15,7 +15,7 @@
 ---
 
 ## 🖼️ Screenshot
-![Screenshot](images/g2-web-ss.png)
+![Home page](images/g3-web-ss.png)
 
 ---
 
